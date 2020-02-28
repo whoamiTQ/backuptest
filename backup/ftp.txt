@@ -1,0 +1,5 @@
+Dear Mustafa,                                                                   
+
+Write permission on FTP server has been enabled on you account.                 
+ ----> FTP directory: "C:\inetpub\wwwroot\uniklftpsites"                        
+Thank you.                                          

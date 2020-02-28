@@ -1,0 +1,43 @@
+# Nmap 7.80 scan initiated Sat Dec 14 12:40:18 2019 as: nmap -sC -sV -vv -r -p 22,80,3389,10045 -oA windows 192.168.0.114
+Nmap scan report for PlayGround (192.168.0.114)
+Host is up, received arp-response (0.0067s latency).
+Scanned at 2019-12-14 12:40:19 +08 for 85s
+
+PORT      STATE SERVICE            REASON          VERSION
+22/tcp    open  ssh                syn-ack ttl 128 OpenSSH for_Windows_7.9 (protocol 2.0)
+| ssh-hostkey: 
+|   2048 3e:35:32:e9:f9:80:4a:6a:d0:5a:00:d9:46:f0:0f:aa (RSA)
+| ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQDgujMY1DyRhRNrwRZmOn4fbT0YYyAYhS7habji04IsaVUj+QRHWqEChRHrLDX15S2KDpFRy7KT+wOovmHDRXIvSeJVnyLwm26VCqfWMf1sHKqtLW+ozpPCKq2/tm+E7v09LB07Rv8+VeYydOdEWvYy15GMG00qloKFyGcIKWxV/zZ3NZSz2QhvqF2AzCK6c5SpsXEmdfqJ9QWyJ1bbUFRploJ/BF7P7mkbQjzwGKl0OwldBsCnyfJ5dY0oO4SrWhrwj0ugqMhlrYxvlzkHhlnRR8maryGL/1I7c9tvrSerzc/2HUziOd4Jn8rLR5ma70u6v7U/Pkca7cLHjxy3/K+L
+|   256 6f:40:06:55:ac:c5:f8:2f:86:d2:4e:96:7e:10:89:af (ECDSA)
+| ecdsa-sha2-nistp256 AAAAE2VjZHNhLXNoYTItbmlzdHAyNTYAAAAIbmlzdHAyNTYAAABBBHv/2R2S9lZ2nIU5fyf//hbHsugzvHAu0iMsT/QBTO0dFy4PNV5Un9p1aCT4WcvoLiYFwQgq2frCoW7J1OZLN0Q=
+|   256 a1:e9:3e:cc:c6:6b:9c:ed:e6:66:b7:24:2a:6c:67:68 (ED25519)
+|_ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIE84zIdF8PxK1OtlekZkwle9bCVJeFeP8FGO2iZlJPv0
+80/tcp    open  http               syn-ack ttl 128 Microsoft IIS httpd 8.5
+| http-methods: 
+|   Supported Methods: OPTIONS TRACE GET HEAD POST
+|_  Potentially risky methods: TRACE
+| http-robots.txt: 1 disallowed entry 
+|_/admin_message
+|_http-server-header: Microsoft-IIS/8.5
+|_http-title: Site Maintenance: PlayGround
+3389/tcp  open  ssl/ms-wbt-server? syn-ack ttl 128
+|_ssl-date: 2019-12-14T04:40:39+00:00; -5s from scanner time.
+10045/tcp open  ftp                syn-ack ttl 128 Microsoft ftpd
+| ftp-anon: Anonymous FTP login allowed (FTP code 230)
+| 12-14-19  11:43AM                 1879 EjhfXMj.txt
+| 10-01-19  03:59AM                  560 secret.txt
+| 12-14-19  11:26AM                   10 test
+| 12-14-19  11:27AM                   10 testcls
+| 12-14-19  11:40AM                 1690 UhxHun.txt
+|_12-14-19  11:40AM                 1694 WnRLHFGJHKxq.txt
+| ftp-syst: 
+|_  SYST: Windows_NT
+MAC Address: 00:0C:29:27:62:2E (VMware)
+Service Info: OS: Windows; CPE: cpe:/o:microsoft:windows
+
+Host script results:
+|_clock-skew: -5s
+
+Read data files from: /usr/bin/../share/nmap
+Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+# Nmap done at Sat Dec 14 12:41:44 2019 -- 1 IP address (1 host up) scanned in 86.13 seconds

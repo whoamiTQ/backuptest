@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE nmaprun>
+<?xml-stylesheet href="file:///usr/bin/../share/nmap/nmap.xsl" type="text/xsl"?>
+<!-- Nmap 7.80 scan initiated Sat Dec 14 12:40:18 2019 as: nmap -sC -sV -vv -r -p 22,80,3389,10045 -oA windows 192.168.0.114 -->
+<nmaprun scanner="nmap" args="nmap -sC -sV -vv -r -p 22,80,3389,10045 -oA windows 192.168.0.114" start="1576298418" startstr="Sat Dec 14 12:40:18 2019" version="7.80" xmloutputversion="1.04">
+<scaninfo type="syn" protocol="tcp" numservices="4" services="22,80,3389,10045"/>
+<verbose level="2"/>
+<debugging level="0"/>
+<taskbegin task="NSE" time="1576298419"/>
+<taskend task="NSE" time="1576298419"/>
+<taskbegin task="NSE" time="1576298419"/>
+<taskend task="NSE" time="1576298419"/>
+<taskbegin task="NSE" time="1576298419"/>
+<taskend task="NSE" time="1576298419"/>
+<taskbegin task="ARP Ping Scan" time="1576298419"/>
+<taskend task="ARP Ping Scan" time="1576298419" extrainfo="1 total hosts"/>
+<taskbegin task="Parallel DNS resolution of 1 host." time="1576298419"/>
+<taskend task="Parallel DNS resolution of 1 host." time="1576298419"/>
+<taskbegin task="SYN Stealth Scan" time="1576298419"/>
+<taskend task="SYN Stealth Scan" time="1576298420" extrainfo="4 total ports"/>
+<taskbegin task="Service scan" time="1576298420"/>
+<taskend task="Service scan" time="1576298439" extrainfo="4 services on 1 host"/>
+<taskbegin task="NSE" time="1576298439"/>
+<taskend task="NSE" time="1576298444"/>
+<taskbegin task="NSE" time="1576298444"/>
+<taskprogress task="NSE" time="1576298475" percent="96.88" remaining="2" etc="1576298476"/>
+<taskend task="NSE" time="1576298504"/>
+<taskbegin task="NSE" time="1576298504"/>
+<taskend task="NSE" time="1576298504"/>
+<host starttime="1576298419" endtime="1576298504"><status state="up" reason="arp-response" reason_ttl="0"/>
+<address addr="192.168.0.114" addrtype="ipv4"/>
+<address addr="00:0C:29:27:62:2E" addrtype="mac" vendor="VMware"/>
+<hostnames>
+<hostname name="PlayGround" type="PTR"/>
+</hostnames>
+<ports><port protocol="tcp" portid="22"><state state="open" reason="syn-ack" reason_ttl="128"/><service name="ssh" product="OpenSSH" version="for_Windows_7.9" extrainfo="protocol 2.0" method="probed" conf="10"><cpe>cpe:/a:openbsd:openssh:for_windows_7.9</cpe></service><script id="ssh-hostkey" output="&#xa;  2048 3e:35:32:e9:f9:80:4a:6a:d0:5a:00:d9:46:f0:0f:aa (RSA)&#xa;ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQDgujMY1DyRhRNrwRZmOn4fbT0YYyAYhS7habji04IsaVUj+QRHWqEChRHrLDX15S2KDpFRy7KT+wOovmHDRXIvSeJVnyLwm26VCqfWMf1sHKqtLW+ozpPCKq2/tm+E7v09LB07Rv8+VeYydOdEWvYy15GMG00qloKFyGcIKWxV/zZ3NZSz2QhvqF2AzCK6c5SpsXEmdfqJ9QWyJ1bbUFRploJ/BF7P7mkbQjzwGKl0OwldBsCnyfJ5dY0oO4SrWhrwj0ugqMhlrYxvlzkHhlnRR8maryGL/1I7c9tvrSerzc/2HUziOd4Jn8rLR5ma70u6v7U/Pkca7cLHjxy3/K+L&#xa;  256 6f:40:06:55:ac:c5:f8:2f:86:d2:4e:96:7e:10:89:af (ECDSA)&#xa;ecdsa-sha2-nistp256 AAAAE2VjZHNhLXNoYTItbmlzdHAyNTYAAAAIbmlzdHAyNTYAAABBBHv/2R2S9lZ2nIU5fyf//hbHsugzvHAu0iMsT/QBTO0dFy4PNV5Un9p1aCT4WcvoLiYFwQgq2frCoW7J1OZLN0Q=&#xa;  256 a1:e9:3e:cc:c6:6b:9c:ed:e6:66:b7:24:2a:6c:67:68 (ED25519)&#xa;ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIE84zIdF8PxK1OtlekZkwle9bCVJeFeP8FGO2iZlJPv0"><table>
+<elem key="fingerprint">3e3532e9f9804a6ad05a00d946f00faa</elem>
+<elem key="bits">2048</elem>
+<elem key="type">ssh-rsa</elem>
+<elem key="key">AAAAB3NzaC1yc2EAAAADAQABAAABAQDgujMY1DyRhRNrwRZmOn4fbT0YYyAYhS7habji04IsaVUj+QRHWqEChRHrLDX15S2KDpFRy7KT+wOovmHDRXIvSeJVnyLwm26VCqfWMf1sHKqtLW+ozpPCKq2/tm+E7v09LB07Rv8+VeYydOdEWvYy15GMG00qloKFyGcIKWxV/zZ3NZSz2QhvqF2AzCK6c5SpsXEmdfqJ9QWyJ1bbUFRploJ/BF7P7mkbQjzwGKl0OwldBsCnyfJ5dY0oO4SrWhrwj0ugqMhlrYxvlzkHhlnRR8maryGL/1I7c9tvrSerzc/2HUziOd4Jn8rLR5ma70u6v7U/Pkca7cLHjxy3/K+L</elem>
+</table>
+<table>
+<elem key="fingerprint">6f400655acc5f82f86d24e967e1089af</elem>
+<elem key="bits">256</elem>
+<elem key="type">ecdsa-sha2-nistp256</elem>
+<elem key="key">AAAAE2VjZHNhLXNoYTItbmlzdHAyNTYAAAAIbmlzdHAyNTYAAABBBHv/2R2S9lZ2nIU5fyf//hbHsugzvHAu0iMsT/QBTO0dFy4PNV5Un9p1aCT4WcvoLiYFwQgq2frCoW7J1OZLN0Q=</elem>
+</table>
+<table>
+<elem key="fingerprint">a1e93eccc66b9cede666b7242a6c6768</elem>
+<elem key="bits">256</elem>
+<elem key="type">ssh-ed25519</elem>
+<elem key="key">AAAAC3NzaC1lZDI1NTE5AAAAIE84zIdF8PxK1OtlekZkwle9bCVJeFeP8FGO2iZlJPv0</elem>
+</table>
+</script></port>
+<port protocol="tcp" portid="80"><state state="open" reason="syn-ack" reason_ttl="128"/><service name="http" product="Microsoft IIS httpd" version="8.5" ostype="Windows" method="probed" conf="10"><cpe>cpe:/a:microsoft:iis:8.5</cpe><cpe>cpe:/o:microsoft:windows</cpe></service><script id="http-methods" output="&#xa;  Supported Methods: OPTIONS TRACE GET HEAD POST&#xa;  Potentially risky methods: TRACE"><table key="Supported Methods">
+<elem>OPTIONS</elem>
+<elem>TRACE</elem>
+<elem>GET</elem>
+<elem>HEAD</elem>
+<elem>POST</elem>
+</table>
+<table key="Potentially risky methods">
+<elem>TRACE</elem>
+</table>
+</script><script id="http-robots.txt" output="1 disallowed entry &#xa;/admin_message"/><script id="http-server-header" output="Microsoft-IIS/8.5"><elem>Microsoft-IIS/8.5</elem>
+</script><script id="http-title" output="Site Maintenance: PlayGround"><elem key="title">Site Maintenance: PlayGround</elem>
+</script></port>
+<port protocol="tcp" portid="3389"><state state="open" reason="syn-ack" reason_ttl="128"/><service name="ms-wbt-server" tunnel="ssl" method="table" conf="3"/><script id="ssl-date" output="2019-12-14T04:40:39+00:00; -5s from scanner time."><elem key="delta">-5.0</elem>
+<elem key="date">2019-12-14T04:40:39+00:00</elem>
+</script></port>
+<port protocol="tcp" portid="10045"><state state="open" reason="syn-ack" reason_ttl="128"/><service name="ftp" product="Microsoft ftpd" ostype="Windows" method="probed" conf="10"><cpe>cpe:/a:microsoft:ftp_service</cpe><cpe>cpe:/o:microsoft:windows</cpe></service><script id="ftp-anon" output="Anonymous FTP login allowed (FTP code 230)&#xa;12-14-19  11:43AM                 1879 EjhfXMj.txt&#xa;10-01-19  03:59AM                  560 secret.txt&#xa;12-14-19  11:26AM                   10 test&#xa;12-14-19  11:27AM                   10 testcls&#xa;12-14-19  11:40AM                 1690 UhxHun.txt&#xa;12-14-19  11:40AM                 1694 WnRLHFGJHKxq.txt"/><script id="ftp-syst" output="&#xa;  SYST: Windows_NT"><elem key="SYST">Windows_NT</elem>
+</script></port>
+</ports>
+<hostscript><script id="clock-skew" output="-5s"><elem key="mean">-5</elem>
+<elem key="count">1</elem>
+<elem key="median">-5</elem>
+<elem key="stddev">0</elem>
+</script></hostscript><times srtt="6727" rttvar="10494" to="100000"/>
+</host>
+<taskbegin task="NSE" time="1576298504"/>
+<taskend task="NSE" time="1576298504"/>
+<taskbegin task="NSE" time="1576298504"/>
+<taskend task="NSE" time="1576298504"/>
+<taskbegin task="NSE" time="1576298504"/>
+<taskend task="NSE" time="1576298504"/>
+<runstats><finished time="1576298504" timestr="Sat Dec 14 12:41:44 2019" elapsed="86.13" summary="Nmap done at Sat Dec 14 12:41:44 2019; 1 IP address (1 host up) scanned in 86.13 seconds" exit="success"/><hosts up="1" down="0" total="1"/>
+</runstats>
+</nmaprun>

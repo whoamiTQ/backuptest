@@ -1,0 +1,25 @@
+User:THS{I_Loveto_go_Playground} 
+
+
+powershell in windowspowershell
+cd /a-h
+
+psh cmd
+x64
+exploit/windows/local/bypassuac_sdclt
+exploit/windows/local/bypassuac_dotnet_profiler
+
+run post/windows/gather/enum_devices
+
+exploit -j
+
+ms16-032
+build exe
+
+
+hackthe box
+trans
+notromo
+import to msf
+use exploit/linux/http/47573
+hydra

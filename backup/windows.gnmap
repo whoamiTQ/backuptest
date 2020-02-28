@@ -1,0 +1,5 @@
+# Nmap 7.80 scan initiated Sat Dec 14 12:40:18 2019 as: nmap -sC -sV -vv -r -p 22,80,3389,10045 -oA windows 192.168.0.114
+# Ports scanned: TCP(4;22,80,3389,10045) UDP(0;) SCTP(0;) PROTOCOLS(0;)
+Host: 192.168.0.114 (PlayGround)	Status: Up
+Host: 192.168.0.114 (PlayGround)	Ports: 22/open/tcp//ssh//OpenSSH for_Windows_7.9 (protocol 2.0)/, 80/open/tcp//http//Microsoft IIS httpd 8.5/, 3389/open/tcp//ssl|ms-wbt-server?///, 10045/open/tcp//ftp//Microsoft ftpd/
+# Nmap done at Sat Dec 14 12:41:44 2019 -- 1 IP address (1 host up) scanned in 86.13 seconds

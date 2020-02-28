@@ -1,0 +1,7 @@
+User:THS{I_Loveto_go_Playground} 
+
+
+powershell in windowspowershell
+cd /a-h
+
+psh cmd
